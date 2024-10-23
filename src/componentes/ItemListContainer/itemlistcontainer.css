@@ -1,0 +1,50 @@
+.item-list-container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemlistcontainer .itemlist{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.itemlistcontainer .item{
+    width: 25%;
+    margin: 3% 3%;
+    padding: 0.50%;
+    border: 3px solid rgb(234, 233, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+.item .card-img-top {
+    width: 100%;
+    border-radius: 1%;
+    box-shadow: 0 0 14px gray;
+    
+}
+.card-text{
+    text-align: center;
+    font-family: 'Times New Roman', Times;
+    color: white;
+}
+
+.card-title {
+    margin-top: 6%;
+    margin-bottom: 3%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.item .card-text {
+    padding: 1% 0;
+
+}
+
+
