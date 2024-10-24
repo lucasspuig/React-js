@@ -11,15 +11,32 @@
     flex-direction: row;
     justify-content: space-around;
 }
-
-.barraNavegacion ul li{
+.categorias{
     list-style: none;
     text-decoration: none;
-    margin: 10%;
-    display: inline;
-    text-shadow: 2px 2px 4px rgba(195, 191, 191, 0.3);
+    margin-left: -10%;
+    margin-right: -10%;
     
 }
+.cate {
+    text-shadow: 2px 2px 4px rgba(117, 117, 117, 0.833);
+    color: rgb(3, 3, 3); /* O ajusta el color según tu diseño */
+}
+.categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ .categoria .cate{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
 .barraNavegacion{
     text-align: center;
     width: 30%;

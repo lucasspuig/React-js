@@ -12,14 +12,14 @@ const Navbar = () => {
         </Link>
         <div className="barraNavegacion">
             <ul className="categorias">
-                <li>
-                    <Link to="/category/jordan 1">Jordan 1 mid</Link>
+                <li className="categoria">
+                    <Link to="/category/jordan 1" className="cate">Jordan 1 mid</Link>
                 </li>
-                <li>
-                    <Link to="/category/jordan retro 5">Jordan retro 5</Link>
-                </li>
-                <li>
-                    <Link to="/category/Air Jordan 13">Air Jordan 13</Link>
+                <li className="categoria">
+                    <Link to="/category/jordan retro 5" className="cate">Jordan retro 5</Link>
+                </li >
+                <li className="categoria">
+                    <Link to="/category/Air Jordan 13" className="cate">Air Jordan 13</Link>
                 </li>
             </ul>
             

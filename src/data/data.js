@@ -50,7 +50,7 @@ const productos = [
         description: "",
         stock: 3,
         price: 2000,
-        image: "public/img/jordanbrand-retropreview-sp24-womensaj14-dh4121-300-a.jpg",
+        image: "/img/jordanbrand-retropreview-sp24-womensaj14-dh4121-300-a.jpg",
         category: "Air Jordan 13"
     }
 ]
