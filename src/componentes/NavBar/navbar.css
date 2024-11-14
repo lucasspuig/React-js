@@ -27,7 +27,8 @@
     flex-direction: row;
     justify-content: space-between;
 }
- .categoria .cate{
+
+.categoria .cate{
     list-style: none;
     text-decoration: none;
     text-align: center;
@@ -42,7 +43,30 @@
     width: 30%;
     margin-top: 2%;
 }
+
 .logoNike{
     margin-right: 2%;
 }
 
+.cartwidget{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartwidget .icon-cartwidget{
+    font-size: 30px;
+    color: #2ECC71;
+}
+
+.cartwidget .empty-cartwidget{
+    font-size: 30px;
+    color: rgb(64, 64, 64);
+}
+
+.cartwidget .number-cartwidget{
+    padding: 0 10px;
+    color: black;
+}
