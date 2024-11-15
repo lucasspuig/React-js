@@ -23,6 +23,7 @@ const ItemDetail = ({producto}) => {
             <img src= {producto.image} className="imgdetail" alt="" />
             <div className="boxdetail">
                 <h2 className="name">{producto.name}</h2>
+                <p className="description">{producto.description}</p>
                 <p className="price">Precio: ${producto.price}</p>
             {
                     mostrarItemCount === true ? (
