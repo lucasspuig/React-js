@@ -27,7 +27,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     background-color: #f9f9f9;
     transition: background-color 0.3s ease;
-    font-size: 1.1rem; /* Aumentar tamaño de texto para productos */
+    font-size: 1.1rem; 
 }
 
 .cartItem:hover {
@@ -35,8 +35,8 @@
 }
 
 .cartItemImage {
-    width: 120px; /* Aumentar tamaño de la imagen */
-    height: 120px;
+    width: 150px; 
+    height: 152px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -60,7 +60,7 @@
 .cartItemDeleteButton {
     background-color: #e74c3c;
     color: white;
-    padding: 8px 12px;
+    padding: 5px 12px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
