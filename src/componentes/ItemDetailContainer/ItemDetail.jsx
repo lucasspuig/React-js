@@ -8,33 +8,33 @@ const ItemDetail = ({producto}) => {
     const[mostrarItemCount,  setMostrarItemcount] = useState(true)
     const { addProductoInCart } = useContext(CartContext)
 
-
-    const addproducto = (count)=>{
+    const addproducto = (count) => {
         const productoCart = { ...producto, quantity: count }
-
         addProductoInCart(productoCart)
         setMostrarItemcount(false)
-        
     }
 
-
     return (
-        <div className="itemDetail">
-            <img src= {producto.image} className="imgdetail" alt="" />
-            <div className="boxdetail">
+        <div className="itemDetailContainer">
+            <div className="itemDetailImage">
+                <img src={producto.image} className="imgdetail" alt={producto.name} />
+            </div>
+            <div className="itemDetailInfo">
                 <h2 className="name">{producto.name}</h2>
                 <p className="description">{producto.description}</p>
                 <p className="price">Precio: ${producto.price}</p>
-            {
-                    mostrarItemCount === true ? (
-                    <ItemCount stock={producto.stock} addproducto={addproducto}/>
-                ) : (
-                <Link to="/cart"> Terminar mi compra  </Link>
-                )
-            }
+                {
+                    mostrarItemCount ? (
+                        <ItemCount stock={producto.stock} addproducto={addproducto} />
+                    ) : (
+                        <Link to="/cart" className="linkToCart">Terminar mi compra</Link>
+                    )
+                }
             </div>
         </div>
     )
 }
 
-export default ItemDetail
+export default ItemDetail;
+
+

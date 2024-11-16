@@ -12,21 +12,21 @@ function App() {
   
 
   return (
-    <>
+    <div className='fondo'>
       <BrowserRouter>
-      <CartProvider>
-          <Navbar />
+          <CartProvider>
+              <Navbar />
 
-          <Routes>
-              <Route path='/' element={<ItemListContainer saludo= {"Pagina dedicada a zapatillas nike"} /> }/>
-              <Route path='/category/:idcategory'element={<ItemListContainer saludo= {"Pagina dedicada a zapatillas nike"}  />} />
-              <Route path='/detail/:idProducto' element={ <ItemDetailContainer />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path= "/checkout" element={<Checkout />} />
-          </Routes>
-        </CartProvider>
+              <Routes>
+                  <Route path='/' element={<ItemListContainer saludo= {"Pagina dedicada a zapatillas nike"} /> }/>
+                  <Route path='/category/:idcategory'element={<ItemListContainer saludo= {"Pagina dedicada a zapatillas nike"}  />} />
+                  <Route path='/detail/:idProducto' element={ <ItemDetailContainer />} />
+                  <Route path="/cart" element={<Cart />} />
+                  <Route path= "/checkout" element={<Checkout />} />
+              </Routes>
+          </CartProvider>
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 

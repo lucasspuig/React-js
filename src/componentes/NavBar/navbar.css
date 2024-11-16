@@ -15,12 +15,19 @@
     list-style: none;
     text-decoration: none;
     margin-left: -10%;
-    margin-right: -10%;
+    margin-right: -20%;
+    margin-left: 5%;
+    
     
 }
 .cate {
     text-shadow: 2px 2px 4px rgba(117, 117, 117, 0.833);
     color: rgb(3, 3, 3); /* O ajusta el color según tu diseño */
+    
+}
+.categoria .cate:hover{
+    color: rgb(146, 146, 146);
+    
 }
 .categorias{
     display: flex;
@@ -31,17 +38,23 @@
 .categoria .cate{
     list-style: none;
     text-decoration: none;
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    display: inline;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 900;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
     font-size: 20px;
+    
+    
 }
 
 .barraNavegacion{
     text-align: center;
-    width: 30%;
+    width: 25%;
     margin-top: 2%;
+    margin-left: 28%;
 }
 
 .logoNike{
@@ -49,11 +62,12 @@
 }
 
 .cartwidget{
-    width: 33.3%;
+    width: 38.3%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .cartwidget .icon-cartwidget{
@@ -64,6 +78,7 @@
 .cartwidget .empty-cartwidget{
     font-size: 30px;
     color: rgb(64, 64, 64);
+    margin-left:80% ;
 }
 
 .cartwidget .number-cartwidget{
