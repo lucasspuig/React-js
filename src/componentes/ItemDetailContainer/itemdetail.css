@@ -3,7 +3,7 @@
     flex-direction: row;
 }
 .itemDetailContainer{
-    padding: 30px;
+    padding: 25px;
 }
 
 .imgdetail{
@@ -22,10 +22,10 @@
     
 }
 .itemDetailInfo{
-    width: 35%;
-    height: 550px;
-    margin-left: 10%;
-    margin-top: 2%;
+    width: 36%;
+    height: 570px;
+    margin-left: 8%;
+    margin-top: 3%;
     text-align: center;
     background-color: rgba(128, 128, 128, 0.095);
     box-shadow: 0 0 18px gray;
@@ -61,25 +61,31 @@
     letter-spacing: 0.5px;
 }
 
-.price{
-    text-align: center;
+.price {
+    display: inline-block;
     margin-top: 5%;
-    margin-left: 40%;
-    
-    width: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: auto;
     text-align: center;
-    background-color: rgba(191, 191, 191, 0.828);
-    color: rgb(0, 0, 0);
-    border: 1px solid white;
-    padding: 5px 10px;
-    font-size: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    list-style-type: none;
-    text-decoration: none;
-    font-weight: 550;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid #b60000b9; /* Rojo */
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all 0.3s ease;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.price:hover {
+    background-color: #b60000b9; /* Rojo */
+    color: white;
+    transform: scale(1.05);
+}
+
+    
 
 .priceagre{
     display: flex;
@@ -127,4 +133,28 @@
 .agregar:hover {
     background-color: #5c5c5c;
     transform: scale(1.05);
+}
+
+.terminarcompra {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #b60000b9; /* Rojo intenso */
+    border: 2px solid #b60000b9;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: auto;
+}
+
+.terminarcompra:hover {
+    background-color: #b60000b9; /* Rojo más oscuro */
+    border-color: #b60000b9;
+    transform: scale(1.05); /* Efecto de zoom */
 }
