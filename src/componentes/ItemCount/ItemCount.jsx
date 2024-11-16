@@ -20,13 +20,13 @@ const[count, setCount]= useState(1)
 
 
     return (
-    <div>
-        <button onClick={handelClickRest}>-</button>
+    <div className="numerocantidad">
+        <button onClick={handelClickRest}className="menos">-</button>
         <p>{count}</p>
-        <button onClick={handelClickAdd }>+</button>
+        <button onClick={handelClickAdd }className="mas">+</button>
 
 
-        <button onClick={ ()=> addproducto(count) }>Agregar al carrito</button>
+        <button onClick={ ()=> addproducto(count) }className="agregar">Agregar al carrito</button>
     </div>
 )
 }

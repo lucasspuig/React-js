@@ -15,23 +15,26 @@ const ItemDetail = ({producto}) => {
     }
 
     return (
-        <div className="itemDetailContainer">
+    <div className="itemDetailContainer">
             <div className="itemDetailImage">
                 <img src={producto.image} className="imgdetail" alt={producto.name} />
             </div>
             <div className="itemDetailInfo">
                 <h2 className="name">{producto.name}</h2>
                 <p className="description">{producto.description}</p>
-                <p className="price">Precio: ${producto.price}</p>
-                {
-                    mostrarItemCount ? (
-                        <ItemCount stock={producto.stock} addproducto={addproducto} />
-                    ) : (
-                        <Link to="/cart" className="linkToCart">Terminar mi compra</Link>
-                    )
-                }
+                <div className="priceagre">
+                    <p className="price">Precio: ${producto.price}</p>
+                    {
+                        mostrarItemCount ? (
+                            <ItemCount className="numerocantidad" stock={producto.stock} addproducto={addproducto} />
+                        ) : (
+                            <Link to="/cart" className="numerocantidad">Terminar mi compra</Link>
+                        )
+                    }
+                </div>
             </div>
-        </div>
+    </div>
+        
     )
 }
 
