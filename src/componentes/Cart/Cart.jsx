@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Link } from "react-router-dom"
+
 const Cart = () => {
     const{ cart, totalPrice, deleteProductoById, deleteCart } = useContext(CartContext)
 
@@ -26,16 +27,19 @@ const Cart = () => {
                 <img src={productoCart.image} width={200} alt="" />
                 <p>{productoCart.name}</p>
                 <p>Cantidad: {productoCart.quantity}</p>
-                <p>Precio c/u: {productoCart.price}</p>
-                <p>Precio parcial:{productoCart.quantity * productoCart.price}</p>
+                <p>Precio c/u: ${productoCart.price}</p>
+                <p>Precio parcial: ${productoCart.quantity * productoCart.price}</p>
 
-                <button onClick={ () => deleteProductoById(productoCart.id)}>Borar producto</button>
+                <button onClick={ () => deleteProductoById(productoCart.id)}>Borrar carrito</button>
             </div>
         ))
     }
 
-        <p>Precio total: {totalPrice()}</p>
-        <button onClick={deleteCart}>Borrar carrito</button>
+        <div>
+            <p>Precio total: ${totalPrice()}</p>
+            <button onClick={deleteCart}>Vaciar carrito</button>
+            <Link to= "/checkout">Terminar mi compra</Link>
+        </div>
     </div>
     
 )
