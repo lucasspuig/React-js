@@ -5,6 +5,8 @@
     import { Timestamp, addDoc, collection, doc, setDoc } from "firebase/firestore"
     import db from "../../db/db.js"
     import { Link } from "react-router-dom"
+    import "./checkout.css"
+
     const Checkout = () => {
     const [dataForm, setDataForm] = useState({
         fullname: "",
@@ -53,22 +55,23 @@
 
 
     return (
-        <div>
-        {
-            idOrder === null ? (
-            <FormCheckout
-                dataForm={dataForm}
-                handleChangeInput={handleChangeInput}
-                handleSubmitForm={handleSubmitForm} />
-            ) : (
-            <div>
-                <h2>Su orden se subio correctamente!😁</h2>
-                <p>Porfavor guarde su nro de seguimiento: {idOrder}</p>
-                <Link to="/">Volver al inicio</Link>
-            </div>
-            )
-        }
-            </div>
-        )
-    }
+        <div className="orderConfirmationContainer">
+            {
+                idOrder === null ? (
+                    <FormCheckout
+                        dataForm={dataForm}
+                        handleChangeInput={handleChangeInput}
+                        handleSubmitForm={handleSubmitForm}
+                    />
+                ) : (
+                    <div className="orderSuccessMessage">
+                        <h2 className="successTitle">¡Su orden se subió correctamente! 😁</h2>
+                        <p className="orderTrackingMessage">Por favor, guarde su número de seguimiento: <strong>{idOrder}</strong></p>
+                        <Link to="/" className="backToHomeButton">Volver al inicio</Link>
+                    </div>
+                )
+            }
+        </div>
+    );
+}
 export default Checkout

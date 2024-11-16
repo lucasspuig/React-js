@@ -1,0 +1,56 @@
+.orderConfirmationContainer {
+    padding: 20px;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orderSuccessMessage {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px;
+}
+
+.successTitle {
+    font-size: 1.5rem;
+    color: #000000a6;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.orderTrackingMessage {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.orderTrackingMessage strong {
+    font-size: 1.4rem;
+    color: #2ecc71;
+    
+}
+
+.backToHomeButton {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    margin-top: 6%;
+    color: white;
+    background-color: #2ecc71;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.backToHomeButton:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
